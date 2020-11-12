@@ -17,21 +17,9 @@ class MainActivity2 : AppCompatActivity() {
         var rg1 = findViewById<RadioGroup>(R.id.radioGroup)
         rg1.setOnCheckedChangeListener( { radioGroup, i ->
             when (i) {
-                R.id.radioButton1 -> {
-                    sugar = "無糖"
-                    sugar = "少糖"
-                    sugar = "半糖"
-                    sugar = "全糖"
-                }
-                R.id.radioButton2 -> {
-                    sugar = "少糖"
-                    sugar = "半糖"
-                    sugar = "全糖"
-                }
-                R.id.radioButton3 -> {
-                    sugar = "半糖"
-                    sugar = "全糖"
-                }
+                R.id.radioButton1 -> sugar = "無糖"
+                R.id.radioButton2 -> sugar = "少糖"
+                R.id.radioButton3 -> sugar = "全糖"
                 R.id.radioButton4 -> sugar = "全糖"
             }
         })
